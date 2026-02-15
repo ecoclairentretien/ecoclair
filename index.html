@@ -1,124 +1,108 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoClair Entretien</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* Global */
+  body {margin:0; font-family:'Roboto', sans-serif; color:#333; background:#FAFAFA;}
+  a {color:#4CAF50; text-decoration:none;}
+  a:hover {text-decoration:underline;}
+  section {padding:60px 20px; max-width:1200px; margin:0 auto;}
+  h1,h2,h3 {margin:0 0 20px 0;}
+  h1 {font-size:3em; color:#fff;}
+  h2 {color:#4CAF50; margin-bottom:30px;}
+  p {margin-bottom:15px; line-height:1.6;}
+  ul {list-style:none; padding:0;}
+  li {margin-bottom:10px;}
+  
+  /* Header */
+  header {background:#4CAF50 url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; text-align:center; padding:120px 20px;}
+  header p {color:white; font-size:1.2em;}
+  header button {margin-top:20px; padding:12px 25px; font-size:1em; border:none; border-radius:5px; background:#fff; color:#4CAF50; cursor:pointer; font-weight:bold;}
+  header button:hover {background:#e6e6e6;}
+  
+  /* Services */
+  .services {display:flex; flex-wrap:wrap; gap:30px; justify-content:center;}
+  .service-box {flex:1 1 300px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.3s;}
+  .service-box:hover {transform:translateY(-5px);}
+  .service-box img {width:100%; height:200px; object-fit:cover;}
+  .service-box .content {padding:20px;}
+  
+  /* Contact */
+  .contact-box {background:#4CAF50; color:white; text-align:center; padding:50px 20px; border-radius:15px;}
+  .contact-box p {font-size:1.2em;}
+  .contact-box a {color:white; font-weight:bold;}
+  
+  /* Footer */
+  footer {text-align:center; padding:20px; background:#333; color:white;}
+  
+  /* Responsive */
+  @media(max-width:768px){.services {flex-direction:column;}}
+</style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="fr"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;EcoClair Entretien&lt;/title&gt;</p>
-<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Global */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>body {margin:0; font-family:'Roboto', sans-serif; color:#333; background:#FAFAFA;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>a {color:#4CAF50; text-decoration:none;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>a:hover {text-decoration:underline;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>section {padding:60px 20px; max-width:1200px; margin:0 auto;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>h1,h2,h3 {margin:0 0 20px 0;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>h1 {font-size:3em; color:#fff;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>h2 {color:#4CAF50; margin-bottom:30px;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>p {margin-bottom:15px; line-height:1.6;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>ul {list-style:none; padding:0;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>li {margin-bottom:10px;}</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Header */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>header {background:#4CAF50 url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&amp;fit=crop&amp;w=1500&amp;q=80') center/cover no-repeat; text-align:center; padding:120px 20px;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>header p {color:white; font-size:1.2em;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>header button {margin-top:20px; padding:12px 25px; font-size:1em; border:none; border-radius:5px; background:#fff; color:#4CAF50; cursor:pointer; font-weight:bold;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>header button:hover {background:#e6e6e6;}</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Services */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.services {display:flex; flex-wrap:wrap; gap:30px; justify-content:center;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.service-box {flex:1 1 300px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.3s;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.service-box:hover {transform:translateY(-5px);}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.service-box img {width:100%; height:200px; object-fit:cover;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.service-box .content {padding:20px;}</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Contact */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.contact-box {background:#4CAF50; color:white; text-align:center; padding:50px 20px; border-radius:15px;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.contact-box p {font-size:1.2em;}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.contact-box a {color:white; font-weight:bold;}</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Footer */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>footer {text-align:center; padding:20px; background:#333; color:white;}</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Responsive */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>@media(max-width:768px){.services {flex-direction:column;}}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;EcoClair Entretien&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Nettoyage ménager &amp; Aménagement paysager – Propreté et harmonie pour votre maison&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="window.location='#contact'"&gt;Demandez une soumission gratuite&lt;/button&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Nos Services&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="services"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="service-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://images.unsplash.com/photo-1581579186435-cf35136b4c10?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Nettoyage maison"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;🧼 Nettoyage Ménager&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Ménage régulier&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Grand ménage&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Nettoyage après déménagement&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Nettoyage en profondeur&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Désinfection des surfaces&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="service-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://images.unsplash.com/photo-1596741570420-c020308de92d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Aménagement paysager"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;🌿 Aménagement Paysager&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Tonte de pelouse&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Taille de haies et arbustes&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Aménagement de plates-bandes&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Plantation d’arbres et fleurs&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Nettoyage saisonnier&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Pourquoi nous choisir ?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;Service fiable et ponctuel&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;Travail minutieux et soigné&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;Tarifs compétitifs&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;li&gt;Satisfaction garantie&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="contact" class="contact-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Contactez-nous&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;📞 Téléphone : XXX-XXX-XXXX&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;📩 Courriel : info@ecoclairentretien.com&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Ou remplissez notre &lt;a href="#"&gt;formulaire de contact&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&amp;copy; 2026 EcoClair Entretien | Tous droits réservés</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+  <h1>EcoClair Entretien</h1>
+  <p>Nettoyage ménager & Aménagement paysager – Propreté et harmonie pour votre maison</p>
+  <button onclick="window.location='#contact'">Demandez une soumission gratuite</button>
+</header>
+
+<section>
+  <h2>Nos Services</h2>
+  <div class="services">
+    <div class="service-box">
+      <img src="https://images.unsplash.com/photo-1581579186435-cf35136b4c10?auto=format&fit=crop&w=800&q=80" alt="Nettoyage maison">
+      <div class="content">
+        <h3>🧼 Nettoyage Ménager</h3>
+        <ul>
+          <li>Ménage régulier</li>
+          <li>Grand ménage</li>
+          <li>Nettoyage après déménagement</li>
+          <li>Nettoyage en profondeur</li>
+          <li>Désinfection des surfaces</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-box">
+      <img src="https://images.unsplash.com/photo-1596741570420-c020308de92d?auto=format&fit=crop&w=800&q=80" alt="Aménagement paysager">
+      <div class="content">
+        <h3>🌿 Aménagement Paysager</h3>
+        <ul>
+          <li>Tonte de pelouse</li>
+          <li>Taille de haies et arbustes</li>
+          <li>Aménagement de plates-bandes</li>
+          <li>Plantation d’arbres et fleurs</li>
+          <li>Nettoyage saisonnier</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Pourquoi nous choisir ?</h2>
+  <ul>
+    <li>Service fiable et ponctuel</li>
+    <li>Travail minutieux et soigné</li>
+    <li>Tarifs compétitifs</li>
+    <li>Satisfaction garantie</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact-box">
+  <h2>Contactez-nous</h2>
+  <p>📞 Téléphone : XXX-XXX-XXXX</p>
+  <p>📩 Courriel : info@ecoclairentretien.com</p>
+  <p>Ou remplissez notre <a href="#">formulaire de contact</a></p>
+</section>
+
+<footer>
+  &copy; 2026 EcoClair Entretien | Tous droits réservés
+</footer>
+
 </body>
 </html>
