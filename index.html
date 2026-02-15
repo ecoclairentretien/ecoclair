@@ -18,51 +18,73 @@
   li {margin-bottom:10px;}
   
   /* Header */
-  header {background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; text-align:center; padding:120px 20px;}
-  header p {color:white; font-size:1.2em;}
-  header button {margin-top:20px; padding:12px 25px; font-size:1em; border:none; border-radius:5px; background:#fff; color:#4CAF50; cursor:pointer; font-weight:bold;}
+  header {
+    position:relative;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+               url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    padding:120px 20px;
+    text-align:center;
+    height:300px;
+    color:white;
+  }
+  header img {
+    position:absolute;
+    top:20px;
+    left:20px;
+    height:80px;
+  }
+  header div {position:relative; top:50%; transform:translateY(-50%);}
+  header button {
+    margin-top:20px; padding:12px 25px; font-size:1em; border:none; border-radius:5px;
+    background:#fff; color:#4CAF50; cursor:pointer; font-weight:bold;
+  }
   header button:hover {background:#e6e6e6;}
-  
+  header p {font-size:1.2em;}
+
   /* Services */
   .services {display:flex; flex-wrap:wrap; gap:30px; justify-content:center; margin-bottom:50px;}
   .service-box {flex:1 1 300px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.3s;}
   .service-box:hover {transform:translateY(-5px);}
   .service-box img {width:100%; height:200px; object-fit:cover;}
   .service-box .content {padding:20px;}
-  
+
   /* Pourquoi nous choisir */
   .cards {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-bottom:50px;}
   .card {flex:1 1 200px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:20px; text-align:center;}
-  
+
   /* Contact Form */
   .contact-box {background:#4CAF50; color:white; text-align:center; padding:50px 20px; border-radius:15px;}
   form {display:flex; flex-direction:column; max-width:500px; margin:0 auto;}
   input, textarea {padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; width:100%;}
   button {background:#fff; color:#4CAF50; padding:12px; border:none; border-radius:5px; cursor:pointer; font-weight:bold;}
   button:hover {background:#e6e6e6;}
-  
+
   /* Footer */
   footer {text-align:center; padding:20px; background:#333; color:white;}
-  
+
   /* Responsive */
   @media(max-width:768px){
     .services, .cards {flex-direction:column; align-items:center;}
+    header {height:auto; padding:80px 20px;}
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>EcoClair Entretien</h1>
-  <p>Nettoyage ménager & Aménagement paysager – Propreté et harmonie pour votre maison</p>
-  <button onclick="window.location='#contact'">Demandez une soumission gratuite</button>
+  <img src="images/logo.png" alt="Logo EcoClair">
+  <div>
+    <h1>EcoClair Entretien</h1>
+    <p>Nettoyage ménager & Aménagement paysager – Propreté et harmonie pour votre maison</p>
+    <button onclick="window.location='#contact'">Demandez une soumission gratuite</button>
+  </div>
 </header>
 
 <section>
   <h2>Nos Services</h2>
   <div class="services">
     <div class="service-box">
-      <img src="maison-propre-1.png" alt="Nettoyage maison">
+      <img src="images/maison-propre-1.png" alt="Nettoyage maison">
       <div class="content">
         <h3>🧼 Nettoyage Ménager</h3>
         <ul>
@@ -75,7 +97,7 @@
       </div>
     </div>
     <div class="service-box">
-      <img src="amenagement.jpg" alt="Aménagement paysager">
+      <img src="images/amenagement.jpg" alt="Aménagement paysager">
       <div class="content">
         <h3>🌿 Aménagement Paysager</h3>
         <ul>
