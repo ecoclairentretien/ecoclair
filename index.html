@@ -17,7 +17,7 @@
   ul {list-style:none; padding:0;}
   li {margin-bottom:10px;}
   
-  /* Header */
+  /* En-tête */
   header {
     position:relative;
     background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -32,6 +32,7 @@
     top:20px;
     left:20px;
     height:300px;
+    display:block;
   }
   header div {position:relative; top:50%; transform:translateY(-50%);}
   header button {
@@ -42,30 +43,51 @@
   header p {font-size:1.2em;}
 
   /* Services */
-  .services {display:flex; flex-wrap:wrap; gap:30px; justify-content:center; margin-bottom:50px;}
+  .services {display:flex; flex-wrap:wrap; gap:30px; justify-content:center; margin-bottom:50px; padding:0 20px;}
   .service-box {flex:1 1 300px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.3s;}
   .service-box:hover {transform:translateY(-5px);}
   .service-box img {width:100%; height:200px; object-fit:cover;}
   .service-box .content {padding:20px;}
 
   /* Pourquoi nous choisir */
-  .cards {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-bottom:50px;}
+  .cards {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-bottom:50px; padding:0 20px;}
   .card {flex:1 1 200px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:20px; text-align:center;}
 
-  /* Contact Form */
-  .contact-box {background:#4CAF50; color:white; text-align:center; padding:50px 20px; border-radius:15px;}
+  /* Formulaire de contact */
+  .contact-box {background:#4CAF50; color:white; text-align:center; padding:50px 20px; border-radius:15px; margin:0 20px 20px 20px;}
   form {display:flex; flex-direction:column; max-width:500px; margin:0 auto;}
-  input, textarea {padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; width:100%;}
-  button {background:#fff; color:#4CAF50; padding:12px; border:none; border-radius:5px; cursor:pointer; font-weight:bold;}
+  input, textarea {padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; width:100%; box-sizing:border-box; font-family:'Roboto', sans-serif; font-size:1em;}
+  button {background:#fff; color:#4CAF50; padding:12px; border:none; border-radius:5px; cursor:pointer; font-weight:bold; font-size:1em;}
   button:hover {background:#e6e6e6;}
 
-  /* Footer */
+  /* Pied de page */
   footer {text-align:center; padding:20px; background:#333; color:white;}
+
+  /* Section */
+  section {padding:40px 20px;}
 
   /* Responsive */
   @media(max-width:768px){
-    .services, .cards {flex-direction:column; align-items:center;}
-    header {height:auto; padding:80px 20px;}
+    h1 {font-size:2em;}
+    header {height:auto; padding:60px 20px; position:relative;}
+    header img {position:static; height:150px; margin-bottom:20px; transform:none;}
+    header div {position:static; top:auto; transform:none;}
+    header p {font-size:1em;}
+    .services, .cards {flex-direction:column; align-items:stretch;}
+    .service-box, .card {flex:1 1 auto; min-width:0;}
+    .contact-box {margin:0 0 20px 0;}
+    section {padding:30px 15px;}
+  }
+
+  @media(max-width:480px){
+    h1 {font-size:1.5em;}
+    h2 {font-size:1.3em;}
+    p {font-size:0.95em;}
+    header button {padding:10px 20px; font-size:0.9em;}
+    input, textarea {padding:8px; font-size:16px;}
+    button {padding:10px; font-size:0.9em;}
+    section {padding:20px 10px;}
+    .contact-box {padding:30px 15px;}
   }
 </style>
 </head>
@@ -104,7 +126,7 @@
           <li>Tonte de pelouse</li>
           <li>Taille de haies et arbustes</li>
           <li>Aménagement de plates-bandes</li>
-          <li>Plantation d’arbres et fleurs</li>
+          <li>Plantation d'arbres et fleurs</li>
           <li>Nettoyage saisonnier</li>
         </ul>
       </div>
