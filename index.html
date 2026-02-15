@@ -7,40 +7,47 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
   /* Global */
-  body {margin:0; font-family:'Roboto', sans-serif; color:#333; background:#FAFAFA;}
+  body {margin:0; font-family:'Roboto', sans-serif; color:#333; background:#FAFAFA; line-height:1.6;}
   a {color:#4CAF50; text-decoration:none;}
   a:hover {text-decoration:underline;}
-  section {padding:60px 20px; max-width:1200px; margin:0 auto;}
   h1,h2,h3 {margin:0 0 20px 0;}
   h1 {font-size:3em; color:#fff;}
   h2 {color:#4CAF50; margin-bottom:30px;}
-  p {margin-bottom:15px; line-height:1.6;}
+  p {margin-bottom:15px;}
   ul {list-style:none; padding:0;}
   li {margin-bottom:10px;}
   
   /* Header */
-  header {background:#4CAF50 url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; text-align:center; padding:120px 20px;}
+  header {background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; text-align:center; padding:120px 20px;}
   header p {color:white; font-size:1.2em;}
   header button {margin-top:20px; padding:12px 25px; font-size:1em; border:none; border-radius:5px; background:#fff; color:#4CAF50; cursor:pointer; font-weight:bold;}
   header button:hover {background:#e6e6e6;}
   
   /* Services */
-  .services {display:flex; flex-wrap:wrap; gap:30px; justify-content:center;}
+  .services {display:flex; flex-wrap:wrap; gap:30px; justify-content:center; margin-bottom:50px;}
   .service-box {flex:1 1 300px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.3s;}
   .service-box:hover {transform:translateY(-5px);}
   .service-box img {width:100%; height:200px; object-fit:cover;}
   .service-box .content {padding:20px;}
   
-  /* Contact */
+  /* Pourquoi nous choisir */
+  .cards {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-bottom:50px;}
+  .card {flex:1 1 200px; background:white; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:20px; text-align:center;}
+  
+  /* Contact Form */
   .contact-box {background:#4CAF50; color:white; text-align:center; padding:50px 20px; border-radius:15px;}
-  .contact-box p {font-size:1.2em;}
-  .contact-box a {color:white; font-weight:bold;}
+  form {display:flex; flex-direction:column; max-width:500px; margin:0 auto;}
+  input, textarea {padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; width:100%;}
+  button {background:#fff; color:#4CAF50; padding:12px; border:none; border-radius:5px; cursor:pointer; font-weight:bold;}
+  button:hover {background:#e6e6e6;}
   
   /* Footer */
   footer {text-align:center; padding:20px; background:#333; color:white;}
   
   /* Responsive */
-  @media(max-width:768px){.services {flex-direction:column;}}
+  @media(max-width:768px){
+    .services, .cards {flex-direction:column; align-items:center;}
+  }
 </style>
 </head>
 <body>
@@ -85,19 +92,24 @@
 
 <section>
   <h2>Pourquoi nous choisir ?</h2>
-  <ul>
-    <li>Service fiable et ponctuel</li>
-    <li>Travail minutieux et soigné</li>
-    <li>Tarifs compétitifs</li>
-    <li>Satisfaction garantie</li>
-  </ul>
+  <div class="cards">
+    <div class="card">Service fiable et ponctuel</div>
+    <div class="card">Travail minutieux et soigné</div>
+    <div class="card">Tarifs compétitifs</div>
+    <div class="card">Satisfaction garantie</div>
+  </div>
 </section>
 
 <section id="contact" class="contact-box">
   <h2>Contactez-nous</h2>
-  <p>📞 Téléphone : XXX-XXX-XXXX</p>
-  <p>📩 Courriel : info@ecoclairentretien.com</p>
-  <p>Ou remplissez notre <a href="#">formulaire de contact</a></p>
+  <form action="https://formspree.io/f/mayvprlk" method="POST">
+    <input type="text" name="name" placeholder="Nom" required>
+    <input type="email" name="_replyto" placeholder="Courriel" required>
+    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  <p>📞 Téléphone : 418-948-3447</p>
+  <p>📩 Courriel : ecoclairentretien@gmail.com</p>
 </section>
 
 <footer>
